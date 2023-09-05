@@ -37,3 +37,16 @@ a {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
+
+/*Making sure everything is properly adjusted (mainly for mobile)*/
+/* Desktop */
+.text-4x1-desktop {
+  font-size: 4rem;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  .text-4x1-mobile {
+    font-size: 2rem;
+  }
+}

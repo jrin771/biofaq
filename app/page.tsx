@@ -15,6 +15,7 @@ import {
   AnimatedLinkedList, 
   HealthCareExpenditureLine,  
 } from '@/components';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
   const divClass = "flex flex-col items-center justify-center min-h-screen"; 
@@ -36,7 +37,24 @@ export default function Home() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  }; 
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();  // Initialize
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const textClass = isMobile ? 'text-4x1-mobile' : 'text-4x1-desktop';
 
   return(
     <main className="overflow-hidden">  
