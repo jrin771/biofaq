@@ -22,7 +22,8 @@ export default function Home() {
     track('page_view', {
       projectId: 'prj_lo6AhCeTU9J2Mf60n1cv2p5gEupk',
       path: window.location.pathname,
-      title: document.title
+      title: document.title, 
+      environment: 'production' // Explicitly specify environment
     });
   }, []);
   const divClass = "flex flex-col items-center justify-center min-h-screen"; 
