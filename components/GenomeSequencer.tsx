@@ -1,3 +1,5 @@
+//What would a good genome sequencer look like? How does genome sequencing actually work? Go down to the bare bare bones and simulate all of it step by step in INSANE DETAIL
+
 "use client";
 
 import React, { useState, useEffect } from "react";
