@@ -8,6 +8,7 @@ import TableOfContents from "./TOC";
 import KaplanMeierPlot from "./KaplanMeierPlot"; 
 import AnimatedLinkedList from "./AnimatedLinkedList";   
 import HealthCareExpenditureLine from "./HealthcareExpenditureLine";
+import GenomeSequencer from "./GenomeSequencer";
 
 export {
     Lawofsegregation, 
@@ -20,4 +21,5 @@ export {
     KaplanMeierPlot,
     AnimatedLinkedList,  
     HealthCareExpenditureLine,
+    GenomeSequencer
 }

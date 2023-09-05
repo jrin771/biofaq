@@ -13,7 +13,8 @@ import {
   TableOfContents, 
   KaplanMeierPlot, 
   AnimatedLinkedList, 
-  HealthCareExpenditureLine,  
+  HealthCareExpenditureLine, 
+  GenomeSequencer 
 } from '@/components';
 import { useState, useEffect } from 'react';
 
@@ -134,6 +135,7 @@ export default function Home() {
         <p className={plaintextClass}> More detail will be added later but here's where the story went. </p>
         <p className={plaintextClass}> We went from reading just a handful of genes to an entire (not exactly, but mostly) human genome.  </p> 
         <p className={plaintextClass}> The cost of reading genomes decreased super-exponentially, to where they are now closing in on 100 USD per genome. </p>
+        <GenomeSequencer genomeLength={50} />
         <p className={plaintextClass}> As sequencing genomes became easier, sequencing other modalities (such as proteomes) became easier as well. </p>
         <p className={plaintextClass}> Now we're sequencing single cell RNA (scRNA-seq) frequently to better understand the heterogeneity of biology. </p>
         <p className={plaintextClass}> There's so much data available now...I wonder what we should do with that data? </p>
