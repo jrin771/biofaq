@@ -1,8 +1,7 @@
 "use client";
 
 import Image from 'next/image'; //I don't really use this component  
-import { useEffect } from 'react'; 
-import { track } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
 
 import { 
   Lawofsegregation, 
@@ -18,14 +17,6 @@ import {
 } from '@/components';
 
 export default function Home() {
-  useEffect(() => {
-    track('page_view', {
-      projectId: 'prj_lo6AhCeTU9J2Mf60n1cv2p5gEupk',
-      path: window.location.pathname,
-      title: document.title, 
-      environment: 'Production' // Maybe upper-case will help?
-    });
-  }, []);
   const divClass = "flex flex-col items-center justify-center min-h-screen"; 
   const h1NormieClass = "text-4x1 font-bold mb-8";
   const h1Class = "text-4x1 font-bold forest-gradient-text mb-8"; 
@@ -50,7 +41,8 @@ export default function Home() {
   return(
     <main className="overflow-hidden">  
       <div className={divClass}>
-        <h1 className={h1Class}>Welcome.</h1>
+        <h1 className={h1Class}>Welcome.</h1> 
+        <Analytics /> 
         <p className={plaintextClass}> I stand on the shoulders of giants. </p>
         <p className={plaintextClass}> <a href="https://twitter.com/LauraDeming?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer">Laura Deming</a> and <a href="https://twitter.com/ArtirKel" target="_blank" rel="noopener noreferrer">Jose Luis Ricon Fernandez de la Puente</a> </p> 
         <p className={plaintextClass}> Wrote the <a href="https://www.ldeming.com/longevityfaq" target="_blank" rel="noopener noreferrer">first</a> and <a href="https://nintil.com/longevity/" target="_blank" rel="noopener noreferrer">second</a> Longevity FAQs, respectively. </p> 
