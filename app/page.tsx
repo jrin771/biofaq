@@ -40,7 +40,8 @@ export default function Home() {
   const italicizedtextClass = `${baseClass} font-bold mb-8 italic`;
   const headerClass = `${isMobile ? "text-lg" : "text-xl"} font-bold mb-8`;
   const captionClass = `${isMobile ? "text-xs" : "text-sm"} font-bold mb-8`;
-  const pngStyle = { width: "100%", maxWidth: "500px", height: "auto" };
+  const pngStyle = {width: "50%", maxWidth: "500px", height: "auto", marginLeft: "25%", marginRight: "25%"};
+  
   
   const handleScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
