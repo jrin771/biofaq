@@ -2,7 +2,7 @@
 
 import Image from 'next/image'; //I don't really use this component  
 import { Analytics } from '@vercel/analytics/react';
-
+import { useState, useEffect } from 'react';
 import { 
   Lawofsegregation, 
   Lawofindependentassortment, 
@@ -16,46 +16,38 @@ import {
   HealthCareExpenditureLine, 
   GenomeSequencer 
 } from '@/components';
-import { useState, useEffect } from 'react';
 
-export default function Home() {
-  const divClass = "flex flex-col items-center justify-center min-h-screen"; 
-  const h1NormieClass = "text-4x1 font-bold mb-8";
-  const h1Class = "text-4x1 font-bold forest-gradient-text mb-8"; 
-  const h1MegaClass = "text-8x1 font-bold forest-gradient-text mb-8"; 
-  const plaintextClass = "text-1.5x1 font-bold mb-8";
-  const italicizedtextClass = "text-1.5x1 font-bold mb-8 italic"; //I'll use you someday bae
-  const headerClass = "text-2x1 font-bold mb-8";
-  const captionClass = "text-1x1 font-bold mb-8";
-
-  const pngStyle = {
-    width: "500px",
-    height: "auto"
-  };
-
-  const handleScroll = (elementId: string) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }; 
-
+export default function Home() { 
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-
-    handleResize();  // Initialize
+    handleResize();
     window.addEventListener('resize', handleResize);
-
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  const textClass = isMobile ? 'text-4x1-mobile' : 'text-4x1-desktop';
+  const divClass = "items-center justify-center min-h-screen"; 
+  const baseClass = isMobile ? "text-sm" : "text-lg";
+  const h1NormieClass = `${baseClass} md:text-4xl font-bold mb-8`;
+  const h1Class = `${baseClass} md:text-4xl font-bold forest-gradient-text mb-8`;
+  const h1MegaClass = `${isMobile ? "text-4xl" : "text-8xl"} font-bold forest-gradient-text mb-8`;
+  const plaintextClass = `${baseClass} font-bold mb-8`;
+  const italicizedtextClass = `${baseClass} font-bold mb-8 italic`;
+  const headerClass = `${isMobile ? "text-lg" : "text-xl"} font-bold mb-8`;
+  const captionClass = `${isMobile ? "text-xs" : "text-sm"} font-bold mb-8`;
+  const pngStyle = { width: "100%", maxWidth: "500px", height: "auto" };
+  
+  const handleScroll = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }; 
 
   return(
     <main className="overflow-hidden">  
