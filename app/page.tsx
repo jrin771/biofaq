@@ -50,6 +50,15 @@ export default function Home() {
     }
   }; 
 
+
+<button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button>
+
+
+
+
+
+
+
   return(
     <main className="overflow-hidden">  
       <div className={divClass}>
@@ -68,7 +77,7 @@ export default function Home() {
         < TableOfContents />
       </div> 
       <div className={divClass}>
-        <h1 id="curiosity-section" className={h1Class}>Curiosity <button className={captionClass} onClick={() => handleScroll("table-of-contents")}><svg height="40" width="40" viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1> 
+        <h1 id="curiosity-section" className={h1Class}>Curiosity <button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1> 
         <p className={plaintextClass}> Why do we age? </p>  
         <p className={plaintextClass}> What exactly IS aging? </p>
         <p className={plaintextClass}> Why do some animals age faster or slower than others? </p>
@@ -84,7 +93,7 @@ export default function Home() {
       </div> 
 
       <div className={divClass}>
-        <h1 id="molecular-biology-foundations-section" className={h1Class}>Molecular Biology Foundations <button className={captionClass} onClick={() => handleScroll("table-of-contents")}><svg height="40" width="40" viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
+        <h1 id="molecular-biology-foundations-section" className={h1Class}>Molecular Biology Foundations <button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
         <p className={plaintextClass}> For a long time biology consisted of looking at things, naming things and cutting things open. </p> 
         <p className={plaintextClass}> Progress was made but biology didn't become an exact science until 1865. </p>  
         <p className={plaintextClass}> That was the year that Gregor Mendel, a friar and biologist, discovered his genetic laws of heritability. </p> 
@@ -135,7 +144,7 @@ export default function Home() {
         <p className={plaintextClass}> (On an unrelated note, have any of you noticed how good those "neural networks" have been getting?) </p>
       </div> 
       <div className={divClass}>
-        <h1 id="current-research-areas-section" className={h1Class}>Current Research Areas <button className={captionClass} onClick={() => handleScroll("table-of-contents")}><svg height="40" width="40" viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
+        <h1 id="current-research-areas-section" className={h1Class}>Current Research Areas <button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
         <p className={plaintextClass}> First things first: Everyone (researcheres especially) should check out <a href="https://impetusgrants.org/" target="_blank" rel="noopener noreferrer">Impetus Grants </a> </p> 
         <p className={plaintextClass}> They were started by <a href="https://twitter.com/LNuzhna?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer">Lada Nuzhna</a>  as a way to rapidly fund basic aging biology research and clinical trials </p> 
         <p className={plaintextClass}> They've distributed (as of September 4th, 2023) <a href="https://www.businesswire.com/news/home/20230725237245/en/Impetus-Grants-Secures-10-million-Commitment-from-Hevolution-Foundation-and-Rosenkranz-Foundation-to-Fund-Aging-Science" target="_blank" rel="noopener noreferrer">24 million dollars in grants </a>  </p>
@@ -197,7 +206,7 @@ export default function Home() {
       
       </div> 
       <div className={divClass}>
-        <h1 id="healthcare-economics-section" className={h1Class}>Healthcare Economics <button className={captionClass} onClick={() => handleScroll("table-of-contents")}><svg height="40" width="40" viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
+        <h1 id="healthcare-economics-section" className={h1Class}>Healthcare Economics <button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
         <p className={plaintextClass}> </p>
         <p className={headerClass}> "In this world nothing can be said to be certain, except death and taxes." </p>
         <p className={headerClass}> — Benjamin Franklin </p>
@@ -219,7 +228,7 @@ export default function Home() {
       </div> 
 
       <div className={divClass}>
-        <h1 id="startups-section" className={h1Class}>Startups <button className={captionClass} onClick={() => handleScroll("table-of-contents")}><svg height="40" width="40" viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>   
+        <h1 id="startups-section" className={h1Class}>Startups <button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>   
         
         <p className={plaintextClass}><a href="https://retro.bio/" target="_blank" rel="noopener noreferrer"><img src="/images/Retro_logo.png" alt="Retro Logo" style={pngStyle} /></a></p>
         <p className={plaintextClass}> Retro Biosciences was founded in 2021 by Joe Betts-LaCroix, Sheng Ding, and Matt Buckley </p> 
@@ -283,7 +292,7 @@ export default function Home() {
       
       </div> 
       <div className={divClass}>
-        <h1 id="fellowships-+-communities-section" className={h1Class}>Fellowships + Communities <button className={captionClass} onClick={() => handleScroll("table-of-contents")}><svg height="40" width="40" viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
+        <h1 id="fellowships-+-communities-section" className={h1Class}>Fellowships + Communities <button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
     
         <p className={plaintextClass}> <a href="https://www.beondeck.com/longevity-startup-school" target="_blank" rel="noopener noreferrer"><img src="/images/5e9d1abf4c5ff941b4c97dc4_Logo+Text.png" alt="On Deck Fellowship" style={pngStyle} /></a></p>
         <p className={plaintextClass}> On Deck Longevity Startup School </p>
