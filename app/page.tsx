@@ -1,6 +1,8 @@
 "use client";
 
-import Image from 'next/image'; //I don't really use this component 
+import Image from 'next/image'; //I don't really use this component  
+import { useEffect } from 'react'; 
+import { track } from '@vercel/analytics';
 
 import { 
   Lawofsegregation, 
@@ -16,6 +18,13 @@ import {
 } from '@/components';
 
 export default function Home() {
+  useEffect(() => {
+    track('page_view', {
+      projectId: 'prj_lo6AhCeTU9J2Mf60n1cv2p5gEupk',
+      path: window.location.pathname,
+      title: document.title
+    });
+  }, []);
   const divClass = "flex flex-col items-center justify-center min-h-screen"; 
   const h1NormieClass = "text-4x1 font-bold mb-8";
   const h1Class = "text-4x1 font-bold forest-gradient-text mb-8"; 
