@@ -1,7 +1,14 @@
 ## Welcome to BIOFAQ 
 
-Interactive Biology Explanations
+Interactive Biology Explanations 
 
+Notes to self: 
+
+Pea Plants -> Molecular Biology Revolution -> Genetics Revolution -> Here We Are 
+
+Add Lots of Pages and Stuff  
+
+Update Beehiiv (or Perhaps just archive that post)
 
 ## Next.js Information
 
