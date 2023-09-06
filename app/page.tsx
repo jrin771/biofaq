@@ -53,12 +53,6 @@ export default function Home() {
 
 <button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button>
 
-
-
-
-
-
-
   return(
     <main className="overflow-hidden">  
       <div className={divClass}>
@@ -69,24 +63,9 @@ export default function Home() {
         <h1 className={h1Class}>Table of Contents</h1> 
         < TableOfContents />
       </div> 
+      
       <div className={divClass}>
-        <h1 id="curiosity-section" className={h1Class}>Curiosity <button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1> 
-        <p className={plaintextClass}> Why do we age? </p>  
-        <p className={plaintextClass}> What exactly IS aging? </p>
-        <p className={plaintextClass}> Why do some animals age faster or slower than others? </p>
-        <p className={plaintextClass}> Why is it that one of your arms isn't older than the other? </p> 
-        <p className={plaintextClass}> Can we control the rate of aging? </p> 
-        <p className={plaintextClass}> How could we measure biological? </p>
-        <p className={plaintextClass}> How would you even test theories of aging? </p>
-        <p className={plaintextClass}> What would clinical trials in people (or pets) look like? </p>
-      </div> 
-
-      <div className={divClass}>
-        <p className={h1NormieClass}> It all starts with pea plants. </p>
-      </div> 
-
-      <div className={divClass}>
-        <h1 id="molecular-biology-foundations-section" className={h1Class}>Molecular Biology Foundations <button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
+        <h1 id="pea-plants-section" className={h1Class}>Pea Plants<button className={`${captionClass} ${isMobile ? 'w-8 h-8' : 'w-10 h-10'}`} onClick={() => handleScroll("table-of-contents")}><svg height={isMobile ? "32" : "40"} width={isMobile ? "32" : "40"} viewBox="0 0 40 40"><polygon points="20,5 35,35 5,35" fill="#66CC66" /></svg></button></h1>
         <p className={plaintextClass}> For a long time biology consisted of looking at things, naming things and cutting things open. </p> 
         <p className={plaintextClass}> Progress was made but biology didn't become an exact science until 1865. </p>  
         <p className={plaintextClass}> That was the year that Gregor Mendel, a friar and biologist, discovered his genetic laws of heritability. </p> 
