@@ -20,8 +20,7 @@ const TableOfContents = () => {
 
     return (
         <div id="table-of-contents" className="flex flex-col"> 
-            <button className={plaintextClass} onClick={() => handleScroll("curiosity-section")}>Curiosity</button>
-            <button className={plaintextClass} onClick={() => handleScroll("molecular-biology-foundations-section")}>Molecular Biology Foundations</button>
+            <button className={plaintextClass} onClick={() => handleScroll("pea-plants-section")}>Pea Plants</button>
             <button className={plaintextClass} onClick={() => handleScroll("current-research-areas-section")}>Current Research Areas</button>
             <button className={plaintextClass} onClick={() => handleScroll("healthcare-economics-section")}>Healthcare Economics</button>
             <button className={plaintextClass} onClick={() => handleScroll("startups-section")}>Startups</button>
