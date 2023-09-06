@@ -57,7 +57,8 @@ export default function Home() {
     <main className="overflow-hidden">  
       <div className={divClass}>
         <Analytics /> 
-        <h1 className={h1MegaClass}>BIOFAQ</h1>
+        <h1 className={h1MegaClass}>BIOFAQ</h1> 
+        <p className={plaintextClass}> Interactive Biology Explanations </p>
       </div> 
       <div className={divClass}>
         <h1 className={h1Class}>Table of Contents</h1> 
