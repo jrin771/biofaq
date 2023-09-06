@@ -1,6 +1,8 @@
 ## Welcome to BIOFAQ 
 
-Interactive Biology Explanations 
+Interactive Biology Explanations  
+
+Also "Distill For Biotech/TechBio/Biology"
 
 Notes to self: 
 
