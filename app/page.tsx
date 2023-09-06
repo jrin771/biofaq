@@ -62,15 +62,8 @@ export default function Home() {
   return(
     <main className="overflow-hidden">  
       <div className={divClass}>
-        <h1 className={h1Class}>Welcome.</h1> 
         <Analytics /> 
-        <p className={plaintextClass}> I stand on the shoulders of giants. </p>
-        <p className={plaintextClass}> <a href="https://twitter.com/LauraDeming?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer">Laura Deming</a> and <a href="https://twitter.com/ArtirKel" target="_blank" rel="noopener noreferrer">Jose Luis Ricon Fernandez de la Puente</a> </p> 
-        <p className={plaintextClass}> Wrote the <a href="https://www.ldeming.com/longevityfaq" target="_blank" rel="noopener noreferrer">first</a> and <a href="https://nintil.com/longevity/" target="_blank" rel="noopener noreferrer">second</a> Longevity FAQs, respectively. </p> 
-        <p className={plaintextClass}> Both are worth your time to deeply read and re-read again. </p>
-        <p className={plaintextClass}> However, there's always more to learn, new perspectives to have, and something exciting to discover.</p> 
-        <p className={plaintextClass}> I hope you'll enjoy </p> 
-        <h1 className={h1MegaClass}>Longevity FAQ 3</h1>
+        <h1 className={h1MegaClass}>BIOFAQ</h1>
       </div> 
       <div className={divClass}>
         <h1 className={h1Class}>Table of Contents</h1> 
