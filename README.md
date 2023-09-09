@@ -4,35 +4,6 @@ Interactive Biology Explanations
 
 Also "Distill For Biotech/TechBio/Biology"
 
-Notes to self:  
-Applied and Observational/Basic Science. Applied = How do we grow crop? How do we not have person die from cancer? Basic = What is this thing? How does it work?
-
-Bio started as medicine (how do we make sick people well?) and natural history (what is this weird leafy thing? What is that animal? etc.) 
-India, Egypt, Greek were the big ones who did that 
-Then middle ages it was further developed by the Islamic world 
-Then europe had its classification and empiricism phase 
-Microscopes -> Cell Theory  
-All of this including zoology and botany and other stuff -> Evolution 
-Spontaneous generation -> germ theory 
-all of this goes to pea plants -> what is life question? 
-Central Dogma and Cracked the genetic code it split into organismal biology and cell/molecular biology. 
-Now with proteomics, single cell sequencing, etc. plus genes + environment relationships its starting to blend together more.  
-
-Future, where are we going? 
-
-New Model organisms (or perhaps not needing model organisms at all, or just using computers. For now though we need some kind of physical reality, so model organisms/organoids are needed before going to pure insilico simulations.) 
-
-AI (obviously. Getting data is a big issue. There are some people who try to "learn with less data" but that's the wrong mentality. Figure out where more data is and use that.) 
-
-Genetics/Genetic Engineering (CRISPR played a role, NGS played a role, lots of stuff here, especially partial epigenetic reprogramming which has had a TON of money starting to flow into stuff)
-
-Cell therapies (
-
-Protein Engineering (This mainly happened bc AlphaFold (AI!) made protein structure prediction much easier)
-
-
-
-
 Update Beehiiv (or Perhaps just archive that post)
 
 ## Next.js Information
