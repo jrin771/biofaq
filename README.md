@@ -1,6 +1,17 @@
 ## Welcome to BIOFAQ 
 
-Interactive Biology Explanations  
+Interactive Biology Explanations   
+
+
+Roadmap for Demo Day: History of Biology, Current Research (with manim graphs), I can keep the startups/Fellowships but perhaps expand more. Main thing is that trying to make a cool website explainer would be nice. 
+
+For manim, pre-generate the videos and just use html for them, since trying to render everything on client-side would probably be a nightmare.  
+
+Have Dockerfiles, Have a real backend (try your best to write this in Go (maybe some python but really Go) since that's what seems based as a backend)
+
+
+
+
 
 Also "Distill For Biotech/TechBio/Biology"
 
