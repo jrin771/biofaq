@@ -1,11 +1,14 @@
 "use client"; 
 
 /**
- * 
- * ADD WAY MORE OF THE SUBCOMPONENTS AND STUFF (THEY DON'T NEED BACKSCROLLING SINCE THEY"RE MINOR STUFF LOLLL)
- * 
- * Future idea: Backscroll just by clicking the keyboard or something? But then mobile users get screwd lol.
- */
+ * I think that History of biology, Drug development/Pharma-y stuff, Longevity 
+ * What about longevity is the real killer parts that need the interactive stuff? 
+ * Frankly I think that the cell/gene therapies are the real stuff, along with the model organism approaches and other things. 
+ * Like where is the value here? 
+ * History of biology could be a fun interactive thing. 
+ */ 
+
+
 
 const TableOfContents = () => {
     const plaintextClass = "text-1.5x1 font-bold mb-8";
@@ -19,7 +22,7 @@ const TableOfContents = () => {
     };
 
     return (
-        <div id="table-of-contents" className="flex flex-col"> 
+        <div id="table-of-contents" className="flex flex-col">  
             <button className={plaintextClass} onClick={() => handleScroll("pea-plants-section")}>Pea Plants</button>
             <button className={plaintextClass} onClick={() => handleScroll("current-research-areas-section")}>Current Research Areas</button>
             <button className={plaintextClass} onClick={() => handleScroll("healthcare-economics-section")}>Healthcare Economics</button>
